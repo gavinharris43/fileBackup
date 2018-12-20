@@ -1,0 +1,17 @@
+package com.qa.RPS;
+
+import org.junit.Test;
+
+import com.qa.Blackjack.Blackjack;
+
+import static org.junit.Assert.*;
+
+public class AppTest 
+{
+@Test
+public void test1() {
+	String result1 = rps.run("rock");
+	
+	assertEquals("rock",result1);
+}
+}

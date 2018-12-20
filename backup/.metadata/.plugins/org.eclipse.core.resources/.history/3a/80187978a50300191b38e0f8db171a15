@@ -1,0 +1,67 @@
+package com.qa.RPS;
+
+import java.util.Random;
+
+/**
+ * Hello world!
+ *
+ */
+public class RPS {
+	
+	public RPS() {
+		
+		
+	}
+
+	public static String run(String input1) {
+
+		String input11 = input1;
+		String output11 = "FAIL";
+		switch (input11) {
+		case "Rock":
+			output11 = "Rock";
+			break;
+		case "Paper":
+			output11 = "Paper";
+			break;
+		case "Scissors":
+			output11 = "Scissors";
+			break;
+		}
+		// String output11 = input11;
+
+		return output11;
+	}
+
+	public String runGame(String string) {
+		String choice = run(string);
+		String compChoice = compChoice();
+		String result = "Lose";
+		if (choice.equals(compChoice)) {
+			result = "Draw";
+		} else if (choice.equals("Rock") && !compChoice.equals("Paper")) {
+			result = "Win";
+		} else if (choice.equals("Paper") && !compChoice.equals("Scissors")) {
+			result = "Win";
+		} else if (choice.equals("Scissors") && !compChoice.equals("Rock")) {
+			result = "Win";
+		}
+
+		return result;
+	}
+	public String compChoice() {
+	int choice = (int) ((Math.random() * ((1 - 3) + 1)) + 1);
+	String choiceStr = null;
+	switch (choice) {
+	case 1: choiceStr="Rock";
+	break;
+	case 2: choiceStr="Paper";
+	break;
+	case 3: choiceStr="Scissors";
+	break;
+	
+	}
+	
+	return choiceStr;
+	}
+}

@@ -1,0 +1,38 @@
+package com.qa.Library;
+
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.ArrayList;
+
+public class Library {
+	private String name;
+	private List<Item> items;
+
+	public Library(String name) {
+		this.name = name;
+		this.items = new ArrayList<Item>();
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public List<Item> getItems() {
+		return this.items;
+
+	}
+	public Item getItemByID(int ID) {
+		Item item1 =items.stream().filter(item -> item.getItemId() == ID).collect(Collectors.toList()).get(0);		
+		return item1;
+
+	}
+
+	public void addItem(Item item) {
+		this.items= this.items.add(item);
+	}
+	
+}

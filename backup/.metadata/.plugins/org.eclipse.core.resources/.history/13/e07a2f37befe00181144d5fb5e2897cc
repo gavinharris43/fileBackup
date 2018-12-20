@@ -1,0 +1,55 @@
+
+public class Car extends Vehicle {
+
+	private int doors;
+	private int rearSeats;
+	
+
+
+	public Car(int manufactureYear, Double engineSixe, int wheels, String registration, String make, int lengthMeters,
+			int doors, int rearSeats) {
+		super(manufactureYear, engineSixe, wheels, registration, make, lengthMeters);
+		this.doors = doors;
+		this.rearSeats = rearSeats;
+	}
+
+	@Override
+	public void drive() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void reverse() {
+		// TODO Auto-generated method stub
+
+	}
+
+	public int getDoors() {
+		return doors;
+	}
+
+	public void setDoors(int doors) {
+		this.doors = doors;
+	}
+
+	public int getRearSeats() {
+		return rearSeats;
+	}
+
+	public void setRearSeats(int rearSeats) {
+		this.rearSeats = rearSeats;
+	}
+
+	@Override
+	public String toString() {
+		return "Car [getDoors()=" + getDoors() + ", getRearSeats()=" + getRearSeats() + ", getManufactureYear()="
+				+ getManufactureYear() + ", getEngineSixe()=" + getEngineSixe() + ", getWheels()=" + getWheels()
+				+ ", getRegistration()=" + getRegistration() + ", getMake()=" + getMake() + ", getLengthMeters()="
+				+ getLengthMeters() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()="
+				+ super.toString() + "]";
+	}
+	
+	
+
+}

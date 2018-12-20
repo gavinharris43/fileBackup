@@ -1,0 +1,72 @@
+package com.qa.Library;
+
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.ArrayList;
+
+public class Library {
+	private String name;
+	private List<Item> items;
+
+	public Library(String name) {
+		this.name = name;
+		this.items = new ArrayList<Item>();
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public List<Item> getItems() {
+		return this.items;
+
+	}
+
+	public boolean CheckOutByID(int ID) {
+		getItemByID(ID).setAvailable(false);
+		return getItemByID(ID).isAvailable();
+
+	}
+
+	public boolean CheckInByID(int ID) {
+		getItemByID(ID).setAvailable(true);
+		return getItemByID(ID).isAvailable();
+
+	}
+	
+	public void removeByID(int ID) {
+		getItemByID(ID);
+		
+		
+	}
+
+	public Item getItemByID(int ID) {
+
+		// Optional
+
+		// Optional<Item>
+		String name = "Item Not Found";
+		Item item1 = new Book(false, name, name, false, name, 0);
+
+		List<Item> tempList = items.stream().filter(item -> item.getItemId() == ID).collect(Collectors.toList());
+
+		if (tempList.size() != 0) {
+			item1 = tempList.get(0);
+		}
+
+		// (tempList.size() == 0) ? System.out.println("jh") :
+		// System.out.println("ihg");
+
+		return item1;
+
+	}
+
+	public void addItem(Item item) {
+		this.items.add(item);
+	}
+
+}

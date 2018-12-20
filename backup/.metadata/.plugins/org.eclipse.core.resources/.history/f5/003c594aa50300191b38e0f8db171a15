@@ -1,0 +1,40 @@
+package com.qa.RPS;
+
+import org.junit.Test;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+
+public class AppTest 
+{
+	public RPS rps;
+	@Before
+	public void run() {
+		RPS rps = new RPS();
+		
+	}
+@Test
+public void test1() {
+	String result1 = rps.run("rock");
+	
+	assertEquals("rock",result1);
+}
+
+@Test
+public void test2() {
+	String result2=rps.run("cunt");
+	assertEquals("FAIL",result2);
+}
+@Test
+public void test3() {
+	String result2= rps.runGame("rock");
+	assertEquals("Draw",result2);
+}
+@Test
+public void test4() {
+	String result3 = rps.runGame("paper");
+	assertEquals("Draw", result3);
+	
+}
+}

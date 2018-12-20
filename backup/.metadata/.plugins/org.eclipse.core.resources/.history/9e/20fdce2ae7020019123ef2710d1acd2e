@@ -1,0 +1,28 @@
+package com.qa.BulderPattern;
+
+class VehicleBuilderImpl implements VehicleBuilder {
+    private Vehicle carTmp;
+
+    public VehicleBuilderImpl() {
+    	vehicleTmp = new Vehicle();
+    }
+
+    public Vehicle build() {
+    	Vehicle car = new Vehicle();
+        car.setRegistration(vehicleTmp.getRegistration());
+        car.setWheels(carTmp.getWheels());
+        return car;
+    }
+
+    public VehicleBuilder setColor(final String color) {
+    	vehicleTmp.setColor(color);
+        return this;
+    }
+
+    public VehicleBuilder setWheels(final int wheels) {
+    	vehicleTmp.setWheels(wheels);
+        return this;
+    }
+    
+    
+}

@@ -1,0 +1,32 @@
+package com.qa.RPS;
+
+/**
+ * Hello world!
+ *
+ */
+public class RPS 
+{
+
+	public static String run(String input1) {
+		
+		String input11 = input1;
+		String output11 = "FAIL";
+		switch (input11) {
+		case "rock": output11= "rock";
+		break;
+		case "paper": output11="paper";
+		break;
+		case "scissors": output11="scissors";
+		break;
+		case "lizard": output11="lizard";
+		break;
+		case "spock": output11="spock";
+		break;
+		}
+		// String output11 = input11;
+		
+		
+		return output11;
+	}
+  
+}

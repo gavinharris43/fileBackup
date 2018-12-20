@@ -1,0 +1,29 @@
+package com.qa.project;
+
+
+import java.util.ArrayList;
+import java.util.stream.*;
+
+import java.util.List;
+
+public class PersonContainer {
+	
+	private static List<Person> list = new ArrayList<Person>();
+	
+	public void addPerson(String name, String jobTitle, Integer age) {
+		Person person = new Person();
+		person.setAttrubutes(name, jobTitle, age);
+		list.add(person);	
+	}
+	
+	public static void prdouble(){
+	list.forEach(System.out::println);
+	}
+	
+	public static List searchName(String name) {
+		return list.stream().filter(person -> person.getName() == name).collect(Collectors.toList());
+		
+	}
+
+}
+

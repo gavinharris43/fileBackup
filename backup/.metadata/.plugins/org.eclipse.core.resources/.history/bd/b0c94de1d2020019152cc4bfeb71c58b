@@ -1,0 +1,9 @@
+package com.qa.FactoryPattern;
+
+public class FactoryPatternDemo {
+
+	public FactoryPatternDemo() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

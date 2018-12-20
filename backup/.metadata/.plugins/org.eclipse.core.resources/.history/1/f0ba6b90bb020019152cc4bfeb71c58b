@@ -1,0 +1,64 @@
+package com.qa.Library;
+
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Ignore;
+
+/**
+ * Unit test for simple App.
+ */
+public class LibraryTest
+
+{
+	Library man;
+
+	@Before
+	public void setup() {
+		man = new Library("Manchester");
+		Item.counter = 1;
+	}
+
+	@Test
+	public void test1() {
+		new Book(true, "Fantastic Beasts and where to find them", "13/04/2017", true, "JK", 200);
+		Book book2 = new Book(true, "Fantastic Beasts and where to find them 2", "13/04/2018", true, "JK", 201);
+
+		assertEquals(2, book2.getItemId());
+	}
+
+	@Test
+	public void test2() {
+		new Map(true, "Newcastle", "13/04/2014", "Newcastle upon Tyne");
+		Book book2 = new Book(true, "Harry Potter and the philosopher's stone", "26/06/1997", true, "JK", 205);
+
+		assertEquals("JK", book2.getAuthor());
+
+	}
+
+	@Test
+	public void test3() {
+		Person person = new Person("Gavin");
+		Book book2 = new Book(true, "Harry Potter and the chaimber of secorets", "13/04/2017", true, "JK", 321);
+		assertEquals(1, person.getPersonID());
+		assertEquals(1, book2.getItemId());
+	}
+
+	@Test
+	public void test4() {
+
+		man.addItem(new Book(true, "Harry Potter and the chaimber of secorets", "13/04/2017", true, "JK", 321));
+		man.addItem(new Book(true, "Harry Potter and the chaimber of secorets", "13/04/2017", true, "JK", 321));
+
+		assertEquals(1, man.getItemByID(1).getItemId());
+	}
+
+	@Test
+	public void test5() {
+		man.addItem(new Book(true, "Harry Potter and the chaimber of secorets", "13/04/2017", true, "JK", 321));
+
+		assertEquals("Harry Potter and the chaimber of secorets", man.getItemByID(6).getName());
+	}
+
+}

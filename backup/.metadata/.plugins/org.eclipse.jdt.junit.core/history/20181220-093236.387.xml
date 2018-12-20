@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="LibraryTest" project="Library" tests="12" started="12" failures="0" errors="0" ignored="0">
+  <testsuite name="com.qa.Library.LibraryTest" time="0.047">
+    <testcase name="test10" classname="com.qa.Library.LibraryTest" time="0.031"/>
+    <testcase name="test11" classname="com.qa.Library.LibraryTest" time="0.0"/>
+    <testcase name="test12" classname="com.qa.Library.LibraryTest" time="0.0"/>
+    <testcase name="test1" classname="com.qa.Library.LibraryTest" time="0.0"/>
+    <testcase name="test2" classname="com.qa.Library.LibraryTest" time="0.0"/>
+    <testcase name="test3" classname="com.qa.Library.LibraryTest" time="0.0"/>
+    <testcase name="test4" classname="com.qa.Library.LibraryTest" time="0.0"/>
+    <testcase name="test5" classname="com.qa.Library.LibraryTest" time="0.0"/>
+    <testcase name="test6" classname="com.qa.Library.LibraryTest" time="0.0"/>
+    <testcase name="test7" classname="com.qa.Library.LibraryTest" time="0.0"/>
+    <testcase name="test8" classname="com.qa.Library.LibraryTest" time="0.0"/>
+    <testcase name="test9" classname="com.qa.Library.LibraryTest" time="0.016"/>
+  </testsuite>
+</testrun>

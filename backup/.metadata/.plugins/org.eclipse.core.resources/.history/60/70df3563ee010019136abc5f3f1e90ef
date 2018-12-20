@@ -1,0 +1,22 @@
+package com.qa.Blackjack;
+
+/**
+ * Hello world!
+ *
+ */
+public class Blackjack
+{
+    public static int BlackjackRun(int arg1, int arg2) {
+    	if (arg1 > 21) {
+    		arg1= 0;
+    	}
+    	if (arg2 > 21) {
+    		arg2= 0;
+    	}
+		return Math.max(arg1, arg2);
+    	
+    	
+    	
+    	
+    }
+}

@@ -1,0 +1,20 @@
+
+public class Car extends Vehicle {
+
+	public Car() {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void drive() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void reverse() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

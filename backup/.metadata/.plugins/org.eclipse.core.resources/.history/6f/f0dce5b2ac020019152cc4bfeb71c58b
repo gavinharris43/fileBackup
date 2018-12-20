@@ -1,0 +1,23 @@
+package com.qa.Library;
+
+public class Library 
+{
+private String name;
+private List<Item> items = new List<>();
+public Library(String name) {
+	this.name=name;
+}
+
+public String getName() {
+	return name;
+}
+
+public void setName(String name) {
+	this.name = name;
+}
+public void getItems() {
+	
+	
+}
+
+}

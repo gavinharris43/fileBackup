@@ -1,0 +1,47 @@
+package com.qa.Library;
+import java.util.Date;
+
+public abstract class  Item {
+	
+	private int itemId;
+	private boolean isAvailable;
+	private String name;
+	private Date published;
+	
+	public Item() {
+		
+	}
+
+	public int getItemId() {
+		return itemId;
+	}
+
+	public void setItemId(int itemId) {
+		this.itemId = itemId;
+	}
+
+	public boolean isAvailable() {
+		return isAvailable;
+	}
+
+	public void setAvailable(boolean isAvailable) {
+		this.isAvailable = isAvailable;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public Date getPublished() {
+		return published;
+	}
+
+	public void setPublished(Date published) {
+		this.published = published;
+	}
+
+}

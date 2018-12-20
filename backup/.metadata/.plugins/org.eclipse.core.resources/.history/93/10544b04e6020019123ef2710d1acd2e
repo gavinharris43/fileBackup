@@ -1,0 +1,35 @@
+package com.qa.BulderPattern;
+
+class Car {
+    private int wheels;
+private String registration;
+    public Vehicle() {
+    }
+
+ 
+
+    public int getWheels() {
+        return wheels;
+    }
+
+    public void setWheels(final int wheels) {
+        this.wheels = wheels;
+    }
+
+    @Override
+    public String toString() {
+        return "Car [wheels = " + wheels + ", color = " + color + "]";
+    }
+
+	public Object getRegistration() {
+		this.registration= registration;
+		return null;
+	}
+}
+
+/**
+ * The builder abstraction.
+ */
+
+
+

@@ -1,0 +1,31 @@
+package com.qa.UniqueSum;
+
+/**
+ * Hello world!
+ *
+ */
+public class UniqueSum {
+	public static int input(int arg1, int arg2, int arg3) {
+		if (arg1 == arg2 && arg2 == arg3) {
+			arg1 = 0;
+			arg2 = 0;
+			arg3 = 0;
+		}
+		if (arg1 == arg2) {
+			arg1 = 0;
+			arg2 = 0;
+		}
+		if (arg1 == arg3) {
+			arg1 = 0;
+			arg3 = 0;
+		}
+		if (arg2 == arg3) {
+			arg2 = 0;
+			arg3 = 0;
+		}
+
+		return arg1 + arg2 + arg3;
+
+	}
+
+}

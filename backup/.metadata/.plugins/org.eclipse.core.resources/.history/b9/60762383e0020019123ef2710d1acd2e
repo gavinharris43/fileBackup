@@ -1,0 +1,9 @@
+package com.qa.BulderPattern;
+
+public class Builder {
+
+	public Builder() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

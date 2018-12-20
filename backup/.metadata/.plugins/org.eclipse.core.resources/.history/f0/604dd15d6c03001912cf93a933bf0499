@@ -1,0 +1,15 @@
+package com.qa.Library;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class PersonHand {
+	private List people;
+	this.people = new ArrayList<Person>();
+
+	public PersonHand(String name ) {
+		
+	}
+	
+
+}

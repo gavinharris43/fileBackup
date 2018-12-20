@@ -1,0 +1,41 @@
+package com.qa.RPS;
+
+import org.junit.Test;
+
+import static org.junit.Assert.*;
+
+import org.junit.Ignore;
+
+
+
+public class AppTest 
+{
+	//public RPS rps;
+	RPS rps = new RPS("gavin");
+	
+@Test
+public void test1() {
+	String result1 = rps.run("Rock");
+	
+	assertEquals("Rock",result1);
+}
+
+@Test
+public void test2() {
+	String result2=rps.run("cunt");
+	assertEquals("FAIL",result2);
+}
+@Ignore
+@Test
+public void test3() {
+	String result2= rps.runGame("Rock");
+	assertEquals("Win",result2);
+}
+@Ignore
+@Test
+public void test4() {
+	String result3 = rps.runGame("Paper");
+	assertEquals("Win", result3);
+	
+}
+}

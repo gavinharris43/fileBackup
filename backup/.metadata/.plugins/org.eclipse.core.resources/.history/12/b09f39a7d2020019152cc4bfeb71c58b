@@ -1,0 +1,9 @@
+package com.qa.FactoryPattern;
+
+public final class Square {
+
+	public Square() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

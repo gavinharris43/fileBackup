@@ -1,0 +1,30 @@
+
+public class Van extends Vehicle {
+
+	private int doors;
+	
+	public Van() {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void drive() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void reverse() {
+		// TODO Auto-generated method stub
+
+	}
+
+	public int getDoors() {
+		return doors;
+	}
+
+	public void setDoors(int doors) {
+		this.doors = doors;
+	}
+
+}

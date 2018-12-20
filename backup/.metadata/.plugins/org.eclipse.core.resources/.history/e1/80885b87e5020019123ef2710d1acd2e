@@ -1,0 +1,13 @@
+
+
+interface VehicleBuilder {
+	Vehicle build();
+
+	VehicleBuilder setColor(final String color);
+
+	VehicleBuilder setWheels(final int wheels);
+    
+	VehicleBuilder setLenghtMeaters(final int length);
+    
+   
+}

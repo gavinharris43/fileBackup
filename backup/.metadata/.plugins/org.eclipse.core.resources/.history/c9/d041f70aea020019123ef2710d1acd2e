@@ -1,0 +1,38 @@
+package com.qa.BulderPattern;
+
+public class VehicleBuildDirector {
+    private VehicleBuilder builder;
+
+    public VehicleBuildDirector(final VehicleBuilder builder) {
+        this.builder = builder;
+    }
+
+    public Vehicle construct() {
+        return builder.setWheels(4)
+                      .setRegistration("PJ59ZMZ")
+                      .setLenghtMeaters(3)
+                      .setType("Car")
+                      .build();
+
+    }
+  
+    
+
+    public Vehicle construct1() {
+        return builder.setWheels(2)
+                      .setRegistration("PJ10HGL")
+                      .setLenghtMeaters(3)
+                      .setType("Bike")
+                      .build();
+    }
+
+
+    public static void main(final String[] arguments) {
+        final VehicleBuilder builder = new VehicleBuilderImpl();
+
+        final VehicleBuildDirector vehicleBuildDirector = new VehicleBuildDirector(builder);
+
+        System.out.println(vehicleBuildDirector.construct());
+        System.out.println(vehicleBuildDirector.construct1());
+    }
+}

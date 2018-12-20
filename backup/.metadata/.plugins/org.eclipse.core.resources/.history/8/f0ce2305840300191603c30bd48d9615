@@ -1,0 +1,17 @@
+package com.qa.MorseCode;
+
+import org.junit.Test;
+import org.junit.Assert.*;
+import junit.framework.TestSuite;
+
+/**
+ * Unit test for simple App.
+ */
+public class AppTest 
+{
+	@Test
+	public void test1() {
+		
+		assertEquils();
+	}
+}

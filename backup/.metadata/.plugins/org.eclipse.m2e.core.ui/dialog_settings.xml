@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item value="All Catalogs" key="catalog"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="E:\QA\gharris\input"/>
+			<item value="E:\QA\gharris\Array"/>
+			<item value="E:\QA\gharris\Anmmal"/>
+			<item value="E:\QA\gharris\Game\src\main\java\com\qa\Game\Game.java"/>
+			<item value="E:\QA\gharris"/>
+			<item value="E:\QA\gharris\HelloWorld\src\HelloWorld.java"/>
+			<item value="E:\QA\gharris\Collections"/>
+			<item value="E:\QA\gharris\PrintNumbers\src\main\java\com\qa\PrintNumbers\ToNumber\ToNumber.java"/>
+			<item value="F:\QA\gharris\PrintNumbers\src\main\java\com\qa\PrintNumbers\App.java"/>
+			<item value="C:\Users\Admin\Desktop\gharris\CheckString"/>
+			<item value="C:\Users\Admin\Desktop\gharris\CheckString\src\main\java\com\qa\CheckString\App.java"/>
+			<item value="C:\Users\Admin\Desktop\gharris\Math"/>
+			<item value="C:\Users\Admin\Desktop\gharris\HelloWorld\src\HelloWorld.java"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="com.qa.Spirals"/>
+			<item value="com.qa.RPS"/>
+			<item value="com.qa.MorseCode"/>
+			<item value="com.qa.SentenceReduction"/>
+			<item value="com.qa.BulderPattern"/>
+			<item value="com.qa.FactoryPattern"/>
+			<item value="com.qa.Library"/>
+			<item value="com.qa.Taxes"/>
+			<item value="com.qa.UniqueSum"/>
+			<item value="com.qa.Blackjack"/>
+			<item value="com.qa.Game"/>
+			<item value="com.qa.Anmmal"/>
+			<item value="com.qa.project"/>
+			<item value="com.qa.Streams"/>
+			<item value="com.qa.Array"/>
+		</list>
+		<list key="groupId">
+			<item value="com.qa"/>
+		</list>
+		<list key="artifactId">
+			<item value="Spirals"/>
+			<item value="RPS"/>
+			<item value="MorseCode"/>
+			<item value="SentenceReduction"/>
+			<item value="BulderPattern"/>
+			<item value="FactoryPattern"/>
+			<item value="Library"/>
+			<item value="Taxes"/>
+			<item value="UniqueSum"/>
+			<item value="Blackjack"/>
+			<item value="Game"/>
+			<item value="Anmmal"/>
+			<item value="project"/>
+			<item value="Streams"/>
+			<item value="Array"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+</section>

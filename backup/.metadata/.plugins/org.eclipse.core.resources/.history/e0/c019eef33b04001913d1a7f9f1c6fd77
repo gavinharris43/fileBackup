@@ -1,0 +1,85 @@
+package com.qa.Library;
+import java.util.*;
+import java.util.stream.Collectors;
+
+public class Library {
+	private String name;
+	private HashMap<Integer, Item> items= new HashMap<Integer, Item>();;
+	
+
+	public Library(String name) {
+		this.name = name;
+		this.items = 
+		
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public Map<Integer, Item> getItems() {
+		return this.items;
+
+	}
+
+	public boolean checkOutByID(int ID) {
+		getItemByID(ID).setAvailable(false);
+		return getItemByID(ID).isAvailable();
+
+	}
+
+	public boolean checkInByID(int ID) {
+		//items.stream().((items.stream().filter(item -> item.getItemId() == ID).findFirst().get()));
+		getItemByID(ID).setAvailable(true);
+		return getItemByID(ID).isAvailable();
+
+	}
+
+	public void removeByID(int ID) {
+
+		if (getItemByID(ID).getName() != "Item Not Found") {
+			items.remove(items.stream().filter(item -> item.getItemId() == ID).findFirst().get());
+		}
+
+	}
+	public String editItem(int ID,String name) {
+		getItemByID(ID).setName(name);
+		return getItemByID(ID).getName();
+		
+	}
+	public Person addPerson(String name) {
+		Person nPerson = new Person(name); 
+		return nPerson;
+		
+	}
+
+	public Item getItemByID(int ID) {
+
+		// Optional
+
+		// Optional<Item>
+		String name = "Item Not Found";
+		Item item1 = new Book(false, name, name, false, name, 0);
+
+		Map<Integer, Item> tempList = items.stream().filter(item -> item.getItemId() == ID).collect(Collectors.toList());
+
+		if (tempList.size() != 0) {
+			item1 = tempList.get(0);
+		}
+
+		// (tempList.size() == 0) ? System.out.println("jh") :
+		// System.out.println("ihg");
+
+		return item1;
+
+	}
+
+	public void addItem(Item item) {
+		this.items.add(item);
+	}
+
+}

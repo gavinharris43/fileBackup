@@ -1,0 +1,23 @@
+package com.qa.Library;
+
+import java.util.Date;
+
+
+
+public class Books extends Item {
+private boolean isFiction;
+
+	public Books(int itemID, boolean isAvailable, String name, Date published,boolean isFiction) {
+		super(itemID, isAvailable, name, published);
+		this.isFiction=isFiction;
+	}
+
+	public boolean isFiction() {
+		return isFiction;
+	}
+
+	public void setFiction(boolean isFiction) {
+		this.isFiction = isFiction;
+	}
+
+}

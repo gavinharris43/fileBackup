@@ -1,0 +1,1 @@
+INDEX VERSION 1.130+E:\QA\gharris\Gavin\.metadata\.plugins\org.eclipse.jdt.core

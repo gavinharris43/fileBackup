@@ -1,0 +1,20 @@
+package com.qa.Library;
+
+public class Journal extends Item {
+	private int volume;
+
+	public Journal(boolean isAvailable, String name, String published, int volume) {
+		super(isAvailable, name, published);
+		this.volume=volume;
+		
+	}
+
+	public int getVolume() {
+		return volume;
+	}
+
+	public void setVolume(int volume) {
+		this.volume = volume;
+	}
+
+}

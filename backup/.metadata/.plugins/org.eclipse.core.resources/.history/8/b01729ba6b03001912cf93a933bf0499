@@ -1,0 +1,10 @@
+package com.qa.Library;
+
+public class PersonHand {
+
+	public PersonHand(String name ) {
+		
+	}
+	
+
+}

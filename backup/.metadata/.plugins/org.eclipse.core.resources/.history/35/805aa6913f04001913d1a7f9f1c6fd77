@@ -1,0 +1,110 @@
+package com.qa.Library;
+import java.util.Map;
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Ignore;
+
+/**
+ * Unit test for simple App.
+ */
+public class LibraryTest
+
+{
+	Library man;
+	Person person;
+
+	@Before
+	public void setup() {
+		man = new Library("Manchester");
+		Person.setPersonID(0);
+		person = new Person("Gavin");
+		Item.counter = 1;
+		man.addItem(new Book(true, "Harry Potter and the chaimber of secorets", "13/04/2017", true, "JK", 321));
+
+	}
+
+	@Test
+	public void test1() {
+		new Book(true, "Fantastic Beasts and where to find them", "13/04/2017", true, "JK", 200);
+		Book book2 = new Book(true, "Fantastic Beasts and where to find them 2", "13/04/2018", true, "JK", 201);
+
+		assertEquals(3, book2.getItemId());
+	}
+
+	@Test
+	public void test2() {
+		new MapClass(true, "Newcastle", "13/04/2014", "Newcastle upon Tyne");
+		Book book2 = new Book(true, "Harry Potter and the philosopher's stone", "26/06/1997", true, "JK", 205);
+
+		assertEquals("JK", book2.getAuthor());
+
+	}
+
+	@Test
+	public void test3() {
+		Person person1 = new Person("Gavin");
+		assertEquals(2, person1.getPersonID());
+	}
+
+	@Test
+	public void test4() {
+
+		man.addItem(new Book(true, "Harry Potter and the chaimber of secorets", "13/04/2017", true, "JK", 321));
+
+		assertEquals(1, man.getItemByID(1).getItemId());
+	}
+
+	@Test
+	public void test5() {
+
+		assertEquals("Item Not Found", man.getItemByID(999999999).getName());
+	}
+
+	@Test
+	public void test6() {
+
+		assertEquals(true, man.getItemByID(1).isAvailable());
+	}
+
+	@Test
+	public void test7() {
+		man.checkOutByID(1);
+
+		assertEquals(false, man.getItemByID(1).isAvailable());
+	}
+
+	@Test
+	public void test8() {
+		man.checkInByID(1);
+
+		assertEquals(true, man.getItemByID(1).isAvailable());
+	}
+
+	@Test
+	public void test9() {
+		man.removeByID(1);
+		assertEquals("Item Not Found", man.getItemByID(1).getName());
+	}
+
+	@Test
+	public void test10() {
+		man.addItem(new Book(true, "Tesa", "13/04/2017", true, "JK", 200));
+		man.editItem(2, "Test");
+		assertEquals("Test", man.getItemByID(2).getName());
+	}
+
+	@Test
+	public void test11() {
+		man.addItem(new Book(true, "Tesa", "13/04/2017", true, "JK", 200));
+		
+		assertEquals(false,person.isRegistered());
+	}
+	@Test
+	public void test12() {
+		Person nPerson=man.addPerson("Gavin");
+		assertEquals("Person [ID=2, name=Gavin, isRegistered=false, itemsCheckedOut=null]",nPerson.toString());
+	}
+
+}

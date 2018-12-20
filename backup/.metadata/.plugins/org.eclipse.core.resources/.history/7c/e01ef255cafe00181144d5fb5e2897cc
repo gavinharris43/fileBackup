@@ -1,0 +1,16 @@
+import com.qa.project.PersonContainer;
+
+public class Runner {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Vehicle vehicle=new Vehicle();
+		
+		Garage.addVehicle("Mr Green", "Junur Programmer",31);
+		
+		System.out.println(Garage.parkingCost(2.3,"PJ59 ZMZ"));
+		PersonContainer.print();
+	}
+
+}

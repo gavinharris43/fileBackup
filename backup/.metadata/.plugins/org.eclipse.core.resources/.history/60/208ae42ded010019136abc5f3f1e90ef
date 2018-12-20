@@ -1,0 +1,21 @@
+package com.qa.Blackjack;
+
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+
+public class AppTest 
+{
+    @Test
+    public void testBlackjack1()
+    {
+       int result1=Blackjack.BlackjackRun(12,17);
+        assertEquals(17, result1);
+    }
+    @Test
+    public void testBlackjack2()
+    {
+       int result1=Blackjack.BlackjackRun(12,22);
+        assertEquals(12, result1);
+}
+}

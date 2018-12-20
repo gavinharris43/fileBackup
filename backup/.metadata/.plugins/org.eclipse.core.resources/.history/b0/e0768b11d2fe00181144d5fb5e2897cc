@@ -1,0 +1,20 @@
+
+
+public class Runner {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Garage.setSpaces(100);
+		Vehicle vehicle=new Car("PJ59 ZMZ",2,4);
+		Vehicle vehicle1=new Van("PJ59 ZMH",4,4);
+		
+		Garage.addVehicle(vehicle);
+		Garage.addVehicle(vehicle1);
+		Garage.parkingCost(6);
+		
+		System.out.println(Garage.parkingCost(2.3,"PJ59 ZMZ"));
+		
+	}
+
+}

@@ -1,0 +1,9 @@
+package com.qa.BulderPattern;
+
+interface CarBuilder {
+    Vehicle build();
+
+    CarBuilder setColor(final String color);
+
+    CarBuilder setWheels(final int wheels);
+}

@@ -1,0 +1,60 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Person {
+	   private String name;
+	   private double age;
+	   private String jobTitle;
+	   
+	   public Person() {
+		   ;
+	}
+	   
+	   public Person(String name, double age,String jobTitle) {
+		   setName(name);
+		   setAge(age);
+		   setJobTitle(jobTitle);
+		   setAttrubutes(name,age,jobTitle);
+		   
+	   }
+	   
+public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public double getAge() {
+		return age;
+	}
+
+	public void setAge(double age) {
+		this.age = age;
+	}
+
+	public String getJobTitle() {
+		return jobTitle;
+	}
+
+	public void setJobTitle(String jobTitle) {
+		this.jobTitle = jobTitle;
+	}
+
+	public void setAttrubutes(String name, doubleeger age, String jobTitle) {
+		this.name = name;
+		this.jobTitle = jobTitle;
+		this.age = age;
+	}
+	
+	
+
+@Override
+public String toString() {
+	return "Person [name=" + name + ", age=" + age + ", jobTitle=" + jobTitle + "]";
+	
+}	   
+}
+
+

@@ -1,0 +1,15 @@
+package com.qa.Blackjack;
+
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+
+public class AppTest 
+{
+    @Test
+    public void testBlackjack1()
+    {
+        Blackjack.Blackjack(12,17);
+        assertEquals(17, Blackjack.Blackjack(12,17));
+    }
+}

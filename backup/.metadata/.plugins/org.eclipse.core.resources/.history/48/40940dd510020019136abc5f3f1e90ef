@@ -1,0 +1,12 @@
+package com.qa.Library;
+
+import java.util.Date;
+
+public class Books extends Item {
+
+	public Books(int itemID, boolean isAvailable, String name, Date published) {
+		super(itemID, isAvailable, name, published);
+		// TODO Auto-generated constructor stub
+	}
+
+}

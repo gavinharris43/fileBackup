@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="true" key="isRegEx"/>
+		<item value="&#x09;this.items" key="selection"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="package com\.qa\.Library;\R\Rimport java\.util\.List;\Rimport java\.util\.stream\.Collectors;\Rimport java\.util\.ArrayList;\R\Rpublic class Library \{\R\tprivate String name;\R\tprivate List&lt;Item&gt; items;\R\R\tpublic Library\(String name\) \{\R\t\tthis\.name = name;\R\t\tthis\.items = new ArrayList&lt;Item&gt;\(\);\R\t\}\R\R\tpublic String getName\(\) \{\R\t\treturn name;\R\t\}\R\R\tpublic void setName\(String name\) \{\R\t\tthis\.name = name;\R\t\}\R\R\tpublic List&lt;Item&gt; getItems\(\) \{\R\t\treturn this\.items;\R\R\t\}\R\tpublic boolean CheckOutByID\(int ID\) \{\R\t\tgetItemByID\(ID\)\.setAvailable\(false\);\R\t\treturn getItemByID\(ID\)\.isAvailable\(\);\R\t\t\R\t\t\R\t\}\R\tpublic boolean CheckInByID\(int ID\) \{\R\t\tgetItemByID\(ID\)\.setAvailable\(true\);\R\t\treturn getItemByID\(ID\)\.isAvailable\(\);\R\t\t\R\t\t\R\t\}\R\R\R\tpublic Item getItemByID\(int ID\) \{\R\R\t\t// Optional\R\R\t\t// Optional&lt;Item&gt;\R\t\tString name=&quot;Item Not Found&quot;;\R\t\tItem item1 = new Book \(false, name, name, false, name, 0\);\R\R\t\tList&lt;Item&gt; tempList = items\.stream\(\)\.filter\(item -&gt; item\.getItemId\(\) == ID\)\.collect\(Collectors\.toList\(\)\);\R\R\t\tif \(tempList\.size\(\) != 0\) \{\R\t\t\titem1= tempList\.get\(0\);\R\t\t\}\R\R\t\t// \(tempList\.size\(\) == 0\) \? System\.out\.println\(&quot;jh&quot;\) :\R\t\t// System\.out\.println\(&quot;ihg&quot;\);\R\R\t\treturn item1;\R\R\t\}\R\R\tpublic void addItem\(Item item\) \{\R\t\tthis\.items\.add\(item\);\R\t\}\R\R\}\R"/>
+			<item value="\titems"/>
+			<item value="  items"/>
+			<item value="Float"/>
+			<item value="blic static int calcPlus() "/>
+		</list>
+		<list key="replacehistory">
+			<item value="\tthis.items"/>
+			<item value="  this.items"/>
+			<item value="Double"/>
+			<item value="D"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="284" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="391" key="DIALOG_HEIGHT"/>
+		<item value="826" key="DIALOG_X_ORIGIN"/>
+		<item value="268" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

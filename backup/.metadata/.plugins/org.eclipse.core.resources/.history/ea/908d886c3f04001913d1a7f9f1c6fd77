@@ -1,0 +1,10 @@
+package com.qa.Library;
+
+public class MapClass extends Item {
+
+	public MapClass(boolean isAvailable, String name, String published) {
+		super(isAvailable, name, published);
+		// TODO Auto-generated constructor stub
+	}
+
+}

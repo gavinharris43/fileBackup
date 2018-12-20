@@ -1,0 +1,22 @@
+package com.qa.SentenceReduction;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Hello world!
+ *
+ */
+
+public class App {
+
+	public static String reduction(String s) {
+		String[] words = s.split("\\s+");
+		for (int i = 0; i < words.length; i++) {
+			if()
+
+		   System.out.println( words[i] = words[i].replaceAll("[^\\w]", ""));
+		}
+		return null;
+	}
+}

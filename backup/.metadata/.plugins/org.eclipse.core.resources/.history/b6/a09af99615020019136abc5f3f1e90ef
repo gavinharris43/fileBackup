@@ -1,0 +1,9 @@
+package com.qa.Library;
+
+public class Maps {
+
+	public Maps() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

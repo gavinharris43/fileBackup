@@ -1,0 +1,25 @@
+
+public abstract class Vehicle {
+	
+	private int manufactureYear;
+	private Double engineSixe;
+	private int wheels;
+	private String registration;
+	private String make;
+	private int lengthMeters;
+	
+
+	public abstract void drive();
+		// move forward
+	public abstract void reverse();
+		// move in reverse
+	
+/*	public Double parkingCost(Double time) {
+		double parkingCost = lengthMeters*wheels*time;
+		return parkingCost;
+	}
+	*/
+
+	
+	
+}

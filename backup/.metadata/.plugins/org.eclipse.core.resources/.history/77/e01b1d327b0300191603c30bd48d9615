@@ -1,0 +1,25 @@
+package com.qa.SentenceReduction;
+
+import org.junit.Test;
+import junit.framework.TestCase;
+import junit.framework.TestSuite;
+import static org.junit.Assert.*;
+
+/**
+ * Unit test for simple App.
+ */
+public class AppTest 
+{
+	@Test
+	public void test1() {
+		String reduction = App.reduction("live verses");
+		
+		assertEquals("liverses", reduction);
+	}
+	@Test
+	public void test2() {
+		String reduction = App.reduction("I heard the pastor sing live verses easily.");
+		
+		assertEquals("I heard the pastor sing liverses easily.", reduction);
+	}
+}

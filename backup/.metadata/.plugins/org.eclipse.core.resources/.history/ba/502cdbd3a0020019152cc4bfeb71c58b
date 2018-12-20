@@ -1,0 +1,19 @@
+package com.qa.Library;
+
+import java.sql.Array;
+
+public class Person {
+	private int personID;
+	private String name;
+	private boolean isRegistered;
+	private Array BooksCheckedOut;
+
+	public Person(String name) {
+		personID++;
+		this.name=name;
+		this.isRegistered=false;
+		this.BooksCheckedOut=null;
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,66 @@
+
+public abstract class Vehicle {
+	
+	private int manufactureYear;
+	private Double engineSixe;
+	private int wheels;
+	private String registration;
+	private String make;
+	private int lengthMeters;
+	
+	public Vehicle() {
+		
+		
+	}
+
+	
+	public abstract void drive();
+		// move forward
+	public abstract void reverse();
+		// move in reverse
+	public int getManufactureYear() {
+		return manufactureYear;
+	}
+	public void setManufactureYear(int manufactureYear) {
+		this.manufactureYear = manufactureYear;
+	}
+	public Double getEngineSixe() {
+		return engineSixe;
+	}
+	public void setEngineSixe(Double engineSixe) {
+		this.engineSixe = engineSixe;
+	}
+	public int getWheels() {
+		return wheels;
+	}
+	public void setWheels(int wheels) {
+		this.wheels = wheels;
+	}
+	public String getRegistration() {
+		return registration;
+	}
+	public void setRegistration(String registration) {
+		this.registration = registration;
+	}
+	public String getMake() {
+		return make;
+	}
+	public void setMake(String make) {
+		this.make = make;
+	}
+	public int getLengthMeters() {
+		return lengthMeters;
+	}
+	public void setLengthMeters(int lengthMeters) {
+		this.lengthMeters = lengthMeters;
+	}
+	
+/*	public Double parkingCost(Double time) {
+		double parkingCost = lengthMeters*wheels*time;
+		return parkingCost;
+	}
+	*/
+
+	
+	
+}

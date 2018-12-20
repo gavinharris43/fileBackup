@@ -1,0 +1,43 @@
+package com.qa.Library;
+
+import java.util.List;
+import java.util.ArrayList;
+
+public class Library {
+	private String name;
+	private List<Item> items;
+
+	public Library(String name) {
+		this.name = name;
+		this.items = new ArrayList<Item>();
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public List<Item> getItems() {
+		return this.items;
+
+	}
+	public Item getItem(int index) {
+		Item item= items.get(index);
+		
+		return item;
+
+	}
+
+	public void addItem(Item item) {
+		this.items.add(item);
+	}
+
+	@Override
+	public String toString() {
+		return "Library [items=" + items + "]";
+	}
+
+}

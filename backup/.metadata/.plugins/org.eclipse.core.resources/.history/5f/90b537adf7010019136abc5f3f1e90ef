@@ -1,0 +1,18 @@
+package com.qa.Taxes;
+
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+public class TaxTest 
+{
+	@Test
+	public void test1Method1() {
+		int result1= Taxes.method1(4000);
+		assertEquals(0,result1);
+	}
+	@Test
+	public void test1Method2() {
+		
+		
+	}
+}

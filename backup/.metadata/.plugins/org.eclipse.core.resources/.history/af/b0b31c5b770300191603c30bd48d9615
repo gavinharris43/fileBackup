@@ -1,0 +1,24 @@
+package com.qa.SentenceReduction;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Hello world!
+ *
+ */
+
+public class App {
+
+	public static String reduction(String string) {
+		List<Character> chars = new ArrayList<>();
+
+		for (char ch: string.toCharArray()) {
+			chars.add(ch);
+		}
+
+		System.out.println(chars);
+
+
+	return null;
+}

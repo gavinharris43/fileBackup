@@ -1,0 +1,32 @@
+package com.qa.Taxes;
+
+/**
+ * Hello world!
+ *
+ */
+public class Taxes {
+	public static int method1(int salary) {
+		int tax = 25;
+		if (salary < 45000) {
+			tax = 20;
+		}
+		if (salary < 30000) {
+			tax = 15;
+		}
+		if (salary < 20000) {
+			tax = 10;
+		}
+		if (salary < 15000){
+			tax = 0;
+		}
+
+		return tax;
+
+	}
+
+	public static int method2(int salary) {
+		return 0;
+		
+		
+	}
+}

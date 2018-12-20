@@ -1,0 +1,19 @@
+package com.qa.Library;
+
+public class Book extends Item {
+private boolean isFiction;
+
+	public Book(int itemID, boolean isAvailable, String name, String published,boolean isFiction) {
+		super(itemID, isAvailable, name, published);
+		this.isFiction=isFiction;
+	}
+
+	public boolean isFiction() {
+		return isFiction;
+	}
+
+	public void setFiction(boolean isFiction) {
+		this.isFiction = isFiction;
+	}
+
+}

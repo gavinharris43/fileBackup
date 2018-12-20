@@ -1,0 +1,16 @@
+package com.qa.Taxes;
+
+/**
+ * Hello world!
+ *
+ */
+public class Taxes
+{
+public static int method1() {
+		return 0;
+		
+	} 
+	
+public static void method2() {
+}
+}

@@ -1,0 +1,43 @@
+
+public class Van extends Vehicle {
+
+	private double doors;
+
+	public Van(double manufactureYear, Double engineSixe, double wheels, String registration, String make, double lengthMeters,
+			double doors) {
+		super(manufactureYear, engineSixe, wheels, registration, make, lengthMeters);
+		this.doors = doors;
+	}
+
+	public Van(String registration, double lengthMeters, double wheels) {
+		super(registration, lengthMeters, wheels);
+
+	}
+
+	@Override
+	public void drive() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void reverse() {
+		// TODO Auto-generated method stub
+
+	}
+
+	public double getDoors() {
+		return doors;
+	}
+
+	public void setDoors(final double doors) {
+		this.doors = doors;
+	}
+
+	@Override
+	public String toString() {
+		return "Van [Registration= " + getRegistration() + ", Wheels= " + getWheels() + ", LengthMeters= "
+				+ getLengthMeters() + "]";
+	}
+
+}

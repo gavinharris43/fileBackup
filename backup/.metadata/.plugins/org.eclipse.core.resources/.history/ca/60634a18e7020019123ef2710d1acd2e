@@ -1,0 +1,23 @@
+package com.qa.BulderPattern;
+
+public class VehicleBuildDirector {
+    private VehicleBuilder builder;
+
+    public VehicleBuildDirector(final VehicleBuilder builder) {
+        this.builder = builder;
+    }
+
+    public Vehicle construct() {
+        return builder.setWheels(4)
+                      .setColor("Red")
+                      .build();
+    }
+
+    public static void main(final String[] arguments) {
+        final VehicleBuilder builder = new VehicleBuilderImpl();
+
+        final VehicleBuildDirector vehicleBuildDirector = new VehicleBuildDirector(builder);
+
+        System.out.println(vehicleBuildDirector.construct());
+    }
+}

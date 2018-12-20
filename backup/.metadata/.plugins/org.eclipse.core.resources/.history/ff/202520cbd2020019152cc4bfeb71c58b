@@ -1,0 +1,9 @@
+package com.qa.FactoryPattern;
+
+public class ShapeFactory {
+
+	public ShapeFactory() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

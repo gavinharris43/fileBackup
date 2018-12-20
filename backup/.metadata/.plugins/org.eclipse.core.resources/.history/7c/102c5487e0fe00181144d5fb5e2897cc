@@ -1,0 +1,61 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class Garage {
+
+	private static int spaces;
+	private static List<Vehicle> listVehicle = new ArrayList<>();
+
+	public Garage(int spaces) {
+		this.spaces = spaces;
+	}
+
+	public static String addVehicle(Vehicle vehicle) {
+		if (listVehicle.size() < spaces) {
+			listVehicle.add(vehicle);
+			return "Added! ";
+		} else {
+			return "Garage Full! ";
+		}
+	}
+		public static String removeVehicle(String reg) {
+		listVehicle.removeAll(listVehicle.stream().filter(v -> v.getRegistration().equals(reg)).collect(Collectors.toList()));
+		return "removed";
+	}
+	public static void Cost(double time) {
+	//List<Vehicle> tempList = new ArrayList<>();
+		for (Vehicle vehicle : listVehicle) {
+		int lengthMeters = vehicle.getLengthMeters();
+		int wheels = vehicle.getWheels();
+			double parkingCost = lengthMeters * wheels * time;
+		System.out.println(vehicle+"Cost: "+parkingCost);
+		
+		}
+		
+	}
+	public static Double Cost(Double time, String reg) {
+		List<Vehicle> tempList = listVehicle.stream().filter(vehicle -> vehicle.getRegistration().equals(reg))
+				.collect(Collectors.toList());
+		
+		if (tempList.size() == 0) {
+			return null;
+		}
+		int lengthMeters = tempList.get(0).getLengthMeters();
+		int wheels = tempList.get(0).getWheels();
+
+		double parkingCost = lengthMeters * wheels * time;
+		removeVehicle(reg);
+		return parkingCost;
+
+	}
+
+	public static int getSpaces() {
+		return spaces;
+	}
+
+	public static void setSpaces(int spaces) {
+		Garage.spaces = spaces;
+	}
+
+}

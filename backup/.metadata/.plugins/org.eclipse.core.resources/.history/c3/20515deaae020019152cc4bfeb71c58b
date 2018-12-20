@@ -1,0 +1,43 @@
+package com.qa.Library;
+
+//import java.awt.List;
+import java.util.ArrayList;
+
+public class Library 
+{
+private String name;
+private ArrayList<Item> items;
+
+public Library(String name) {
+	this.name=name;
+	items = new ArrayList<Item>();
+}
+
+public String getName() {
+	return name;
+}
+
+public void setName(String name) {
+	this.name = name;
+}
+public ArrayList<Item> getItems() {
+	return items;
+	
+}
+public void addItem(boolean isAvailable, String name, String published,boolean isFiction , String author, int pages) {
+	items.add(new Book(isAvailable,name,published , isFiction, author, pages) );
+}
+public void addItem(boolean isAvailable, String name, String published, String area) {
+	
+}
+public void addItem(boolean isAvailable, String name, String published,int volume,int pages , String author) {
+	
+}
+
+@Override
+public String toString() {
+	return "Library [items=" + items + "]";
+} 
+
+}
+

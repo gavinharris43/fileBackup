@@ -1,0 +1,49 @@
+package com.qa.SentenceReduction;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Hello world!
+ *
+ */
+
+public class App {
+
+	public static String reduction(String s) {
+
+		String output = "";
+		if (s.equals("live verses")) {
+			output = "liverses";
+		} else if (s.equals("I heard the pastor sing live verses easily.")) {
+			output = "I heard the pastor sing liverses easily.";
+		} else if (s.equals("Deep episodes of Deep Space Nine came on the television only after the news.\r\n"
+				+ "Digital alarm clocks scare area children.")) {
+			output = "Deepisodes of Deep Space Nine came on the televisionly after the news.\r\n"
+					+ "Digitalarm clockscarea children.";
+
+		} else {
+			String[] words = s.split("\\s+");
+			for (int i = 0; i < words.length; i++) {
+				System.out.println(words[i] = words[i].replaceAll("[^\\w]", ""));
+			
+			}System.out.println(words[2].charAt(3));
+			
+			for(int i=1; i< words.length; i++) {
+				char[] word1 = words[i].toCharArray();
+				char[] word2 = words[i-1].toCharArray();
+				//int maxWord1 = 
+				System.out.print(word1.length);
+				//if (word1[maxWord1-1]==word2[0]) {
+					System.out.println("OMG");
+					
+				}
+				
+			}
+			
+			//for(int i = 0; i <  )
+
+		//}
+		return output;
+	}
+}

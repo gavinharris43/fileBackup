@@ -1,0 +1,49 @@
+package com.qa.BulderPattern;
+
+class Vehicle {
+    private int wheels;
+private String registration;
+private int lengthMeaters;
+
+    public Vehicle() {
+    }
+
+ 
+
+    public int getWheels() {
+        return wheels;
+    }
+
+    public void setWheels(final int wheels) {
+        this.wheels = wheels;
+    }
+    
+
+    public int getLengthMeaters() {
+		return lengthMeaters;
+	}
+
+
+
+	public void setLengthMeaters(final int lengthMeaters) {
+		this.lengthMeaters = lengthMeaters;
+	}
+
+
+
+	public void setRegistration(final String registration) {
+		this.registration= registration;
+		
+	}
+	public String getRegistration() {
+		return registration;
+	}
+	
+}
+
+/**
+ * The builder abstraction.
+ */
+
+
+
